@@ -1,0 +1,89 @@
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: inline-block;
+}
+
+.input {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.input1 {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 130px;
+    background: white;
+}
+
+.left {
+    margin-left: 15px;
+    font-size: 13px;
+}
+.header {
+    margin: 40px;
+}
+
+.main-menu ul li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    background: #FFE7F0;
+    padding: 50px 0 15px 0;
+}
+
+.content1 {
+    background: #FFCFE0;
+}
+
+.content1 th {
+    padding: 15px 20px;
+}
+
+.content2 {
+    background: #FEF8FA;
+}
+
+.content2 td {
+    padding: 15px 20px;
+}
+
+.content3 {
+    background:#FFEDF4;
+}
+
+.content3 td {
+    padding: 15px 20px;
+}
+
+.input2 {
+    border: 1px solid #dfa0a8;
+    border-radius: 3px;
+    margin-left: 50px;
+    background: white;
+    width: 100px;
+    margin-left:80px;
+}
+
+.app {
+    font-size: 80%;
+    padding: 30px;
+}
+
+label {
+    font-size: 12px;
+}
+
+.content1 th, .content2 td, .content3 td {
+    font-size: 12px;
+}
+
+
