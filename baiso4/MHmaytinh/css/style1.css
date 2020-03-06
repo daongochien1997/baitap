@@ -1,0 +1,146 @@
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: inline-block;
+}
+
+.content {
+    background: #FFE7F0;
+    padding: 30px 0 15px 0;
+}
+
+.header {
+    margin: 40px;
+}
+
+.left {
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.main-menu ul li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.input {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.input1 {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 130px;
+    background: white;
+    height: 35px;
+    color: #dfa0a8;
+}
+
+.input2 {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 140px;
+    background: white;
+
+}
+
+.input3 {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 50px;
+    background: white;
+}
+
+.input4 {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 300px;
+    background: white;
+    height: 30px;
+    color: #dfa0a8;
+}
+
+.input5 {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 250px;
+    background: white;
+    height: 35px;
+    color: #dfa0a8;
+}
+
+.content1 {
+    background: #FFCFE0;
+}
+
+.content1 th {
+    padding: 15px 0;
+}
+
+.content2 {
+    background: #B5B5B5;
+}
+
+.p {
+   margin-bottom: auto;
+    font-size: 12px;
+}
+
+.content2, .content3 td {
+    padding: 10px 0;
+}
+
+.footer {
+    padding: 70px 0 50px 150px;
+    font-size: 12px;
+}
+
+.modal-body p {
+    font-size: 12px;
+}
+
+label {
+    font-size: 12px;
+}
+
+.content1 th, .content2 td, .content3 td {
+    font-size: 12px;
+}
+
+.note {
+    display: inline-block;
+    font-size: 12px;
+    border: 1px solid #3283C7;
+    background: #F3F9FF;
+    width: 180px;
+    height: auto;
+    padding: 15px 0 20px 0;
+    top: 40px;
+    left: 160px;
+    position: relative;
+}
+
+.note p {
+    margin-bottom: auto;
+}
+
+.note1 {
+    display: inline-block;
+    font-size: 12px;
+    border: 1px solid #3283C7;
+    background: #F3F9FF;
+    width: 180px;
+    height: auto;
+    padding: 15px 0 0 0;
+    bottom: 20px;
+    left: 20px;
+    position: relative;
+}
+

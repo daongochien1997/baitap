@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="search_box.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <a href="#"> <img src="logo.PNG" alt=""></a>
+    <p style="color: #E30077; padding-left: 80px; font-size: 12px">大阪</p>
+</div>
+
+<div class="row">
+    <div class="col-sm-2">
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#">予約管理</a></li>
+                <li class="left"><a href="#">予約依頼一覧</a></li>
+                <li class="left"><a href="#">予約連絡・確定一覧</a></li>
+                <li class="left"><a href="#">キャンセル一覧</a></li>
+                <li><a href="#">患者管理</a></li>
+                <li class="left"><a href="#">患者一覧</a></li>
+                <li class="left"><a href="#">患者CSV取り込み</a></li>
+                <li><a href="#">マスタ管理</a></li>
+                <li class="left"><a href="#">管理者一覧</a></li>
+                <li class="left"><a href="#">症例紹介</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="col-sm-10">
+        <div class="note">
+            <p>予約連絡・確定一覧</p>
+            <p>予約日連絡済み</p>
+            <p>予約日確認済み (確定)</p>
+            <p>自動キャンセル</p>
+            <p>再提案 (予約不可)</p>
+        </div>
+        <div class="content">
+            <p>
+                <label style="padding-right: 70px">ステータス</label>
+                <input class="input" type="text">
+            </p>
+            <p>
+                <label style="padding-right: 70px">カルテ番号</label>
+                <input class="input" type="text">
+            </p>
+            <p>
+                <label style="padding-right: 70px">美容・歯科</label>
+                <input class="input" type="text"  style="margin-right: 20px">
+                <label style="padding-right: 50px">予約カテゴリ</label>
+                <input class="input" type="text">
+                <label style="padding-right: 50px; padding-left: 10px">相談内容</label>
+                <input class="input" type="text">
+            </p>
+            <p>
+                <label style="padding-right: 94px">候補日</label>
+                <input class="input" type="text"  style="margin-right: 30px">
+                <input class="input" type="text">
+            </p>
+            <p style="text-align: center"><input class="input1" type="submit" value="検索"></p>
+        </div>
+        <p style="margin-top: 70px">
+            <input class="input1" type="submit" value="新規確定予約登録" data-toggle="modal" data-target="#myModal">
+        </p>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-sm">
+                <div style="background: #FFE7F0" class="modal-content">
+
+                    <div class="modal-body">
+                        <p>
+                            <label>ステータス</label>
+                            <select class="input5" style="margin-left: 25px">
+                            </select>
+                        </p>
+                        <p>
+                            <label>カルテ番号</label>
+                            <input class="input4" type="text" style="margin-left: 25px">
+                        </p>
+                        <p>
+                            <label>美容・歯科</label>
+                            <select class="input5" style="margin-left: 25px">
+                            </select>
+                        </p>
+                        <p>
+                            <label>予約カテゴリ</label>
+                            <select class="input5" style="margin-left: 13px">
+                            </select>
+                        </p>
+                        <p>
+                            <label>相談内容</label>
+                            <select class="input5" style="margin-left: 37px">
+                            </select>
+                        </p>
+                        <p>
+                            <label>手術準備金</label>
+                            <input class="input4" type="text" style="margin-left: 24px">
+                        </p>
+                        <p>
+                            <label>確定日</label>
+                            <input class="input5" type="text" style="margin-left: 48px">
+                        </p>
+                        <p>
+                            <label>金額</label>
+                            <input class="input5" type="text" style="margin-left: 61px">
+
+                        <p style="text-align: center" >
+                            <input class="input1" type="submit" value="登録">
+                            <input class="input1" type="submit" value="キャンセル">
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <table style="width: 100%; margin-top: 50px">
+            <tr class="content1">
+                <th>ステータス</th>
+                <th>予約No</th>
+                <th>予約日</th>
+                <th>予約連絡した日</th>
+                <th>自動キャンセルまでの日数</th>
+                <th>患者が確定した日</th>
+                <th>カルテ番号</th>
+                <th>美容・歯科</th>
+                <th>予約カテゴリ</th>
+                <th>相談内容</th>
+                <th>予約金カテゴリ</th>
+                <th>合計金額</th>
+                <th>予約金額</th>
+                <th>支払いステータス</th>
+                <th>アクション</th>
+            </tr>
+            <tr class="content2">
+                <td>連絡済み</td>
+                <td>20191209002</td>
+                <td>2019/12/09</td>
+                <td>2019/12/09</td>
+                <td>2日</td>
+                <td>2019/12/09</td>
+                <td>123456</td>
+                <td>歯科</td>
+                <td>手術</td>
+                <td>定期検診</td>
+                <td>50%</td>
+                <td>800000</td>
+                <td>400000</td>
+                <td>済</td>
+                <td>
+                    <p>
+                        <input class="input2" type="submit" value="患者確認済みにする">
+                        <input class="input3" type="submit" value="編集">
+                    </p>
+                    <p>
+
+                        <input class="input3" type="submit" value="削除">
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+        <div class="footer">
+            カルテ番号ポップアップ電話番号
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

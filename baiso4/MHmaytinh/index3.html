@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="search_box.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <a href="#"> <img src="logo.PNG" alt=""></a>
+    <p style="color: #E30077; padding-left: 80px; font-size: 12px">大阪</p>
+</div>
+
+<div class="row">
+    <div class="col-sm-2">
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#">予約管理</a></li>
+                <li class="left"><a href="#">予約依頼一覧</a></li>
+                <li class="left"><a href="#">予約連絡・確定一覧</a></li>
+                <li class="left"><a href="#">キャンセル一覧</a></li>
+                <li><a href="#">患者管理</a></li>
+                <li class="left"><a href="#">患者一覧</a></li>
+                <li class="left"><a href="#">患者CSV取り込み</a></li>
+                <li><a href="#">マスタ管理</a></li>
+                <li class="left"><a href="#">管理者一覧</a></li>
+                <li class="left"><a href="#">症例紹介</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="col-sm-10">
+        <p style="font-size: 21px">患者管理</p>
+        <p style="margin-top: 40px; margin-bottom: 40px">
+            <input class="input4" type="submit" value="新規予約登録" data-toggle="modal" data-target="#myModal">
+        </p>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div style="background: #FFE7F0" class="modal-content">
+
+                    <div class="modal-body">
+                       <p>
+                           <label>カテゴリ１</label>
+                           <select class="input2">
+                           </select>
+                       </p>
+                        <p>
+                            <label>カテゴリ２</label>
+                            <select class="input2">
+                                <option></option>
+                                <option>カテゴリ１</option>
+                                <option>カテゴリ２</option>
+                                <option>カテゴリ３</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>カテゴリ３</label>
+                            <select class="input2">
+                                <option></option>
+                                <option>カテゴリ１</option>
+                                <option>カテゴリ２</option>
+                                <option>カテゴリ３</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>Before画像</label>
+                            <input class="input1" type="text">
+                        </p>
+                        <img style="padding: 0 0 15px 122px" src="face.PNG" alt="">
+                        <p>
+                            <label>Before画像</label>
+                            <input class="input1" type="text">
+                        </p>
+                        <img style="padding: 0 0 15px 122px" src="face.PNG" alt="">
+                        <p>
+                            <label>注釈</label>
+                            <input class="input3" type="text">
+                        </p>
+                        <p>
+                            <label>料金</label>
+                            <input class="input3" type="text">
+
+                        <p style="text-align: center" >
+                            <input class="input1" type="submit" value="登録">
+                            <input class="input1" type="submit" value="キャンセル">
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <table style="width: 100%; margin-top: 50px; margin-bottom: 70px">
+            <tr class="content1">
+                <th>番号</th>
+                <th>カテゴリ１</th>
+                <th>カテゴリ２</th>
+                <th>カテゴリ３</th>
+                <th>Before画像</th>
+                <th>After画像</th>
+                <th>注釈</th>
+                <th>料金</th>
+                <th>アクション</th>
+            </tr>
+            <tr class="content2">
+                <td>123456</td>
+                <td>顔</td>
+                <td>目</td>
+                <td>二重まぶた・埋没法</td>
+                <td><img src="face.PNG" alt=""></td>
+                <td><img src="face.PNG" alt=""></td>
+                <td>
+                    <p class="p">注釈が入ります注釈が入</p>
+                    <p class="p">ります注釈が入ります</p>
+                </td>
+                <td>
+                    <p class="p">二重まぶた・埋没法</p>
+                    <p class="p">片目 ¥50,000 /</p>
+                    <p class="p">両目 ¥90,000</p>
+                </td>
+                <td>
+                    <i class="fas fa-pen-fancy"></i>
+                    <i class="fas fa-dumpster"></i>
+                </td>
+            </tr>
+
+            <tr class="content3">
+                <td>123456</td>
+                <td>顔</td>
+                <td>目</td>
+                <td>二重まぶた・埋没法</td>
+                <td><img src="face.PNG" alt=""></td>
+                <td><img src="face.PNG" alt=""></td>
+                <td>
+                    <p class="p">注釈が入ります注釈が入</p>
+                    <p class="p">ります注釈が入ります</p>
+                </td>
+                <td>
+                    <p class="p">二重まぶた・埋没法</p>
+                    <p class="p">片目 ¥50,000 /</p>
+                    <p class="p">両目 ¥90,000</p>
+                </td>
+                <td>
+                    <i class="fas fa-pen-fancy"></i>
+                    <i class="fas fa-dumpster"></i>
+                </td>
+            </tr>
+            <tr class="content2">
+                <td>123456</td>
+                <td>顔</td>
+                <td>目</td>
+                <td>二重まぶた・埋没法</td>
+                <td><img src="face.PNG" alt=""></td>
+                <td><img src="face.PNG" alt=""></td>
+                <td>
+                    <p class="p">注釈が入ります注釈が入</p>
+                    <p class="p">ります注釈が入ります</p>
+                </td>
+                <td>
+                    <p class="p">二重まぶた・埋没法</p>
+                    <p class="p">片目 ¥50,000 /</p>
+                    <p class="p">両目 ¥90,000</p>
+                </td>
+                <td>
+                    <i class="fas fa-pen-fancy"></i>
+                    <i class="fas fa-dumpster"></i>
+                </td>
+            </tr>
+
+            <tr class="content3">
+                <td>123456</td>
+                <td>顔</td>
+                <td>目</td>
+                <td>二重まぶた・埋没法</td>
+                <td><img src="face.PNG" alt=""></td>
+                <td><img src="face.PNG" alt=""></td>
+                <td>
+                    <p class="p">注釈が入ります注釈が入</p>
+                    <p class="p">ります注釈が入ります</p>
+                </td>
+                <td>
+                    <p class="p">二重まぶた・埋没法</p>
+                    <p class="p">片目 ¥50,000 /</p>
+                    <p class="p">両目 ¥90,000</p>
+                </td>
+                <td>
+                    <i class="fas fa-pen-fancy"></i>
+                    <i class="fas fa-dumpster"></i>
+                </td>
+            </tr>
+            <tr class="content2">
+                <td>123456</td>
+                <td>顔</td>
+                <td>目</td>
+                <td>二重まぶた・埋没法</td>
+                <td><img src="face.PNG" alt=""></td>
+                <td><img src="face.PNG" alt=""></td>
+                <td>
+                    <p class="p">注釈が入ります注釈が入</p>
+                    <p class="p">ります注釈が入ります</p>
+                </td>
+                <td>
+                    <p class="p">二重まぶた・埋没法</p>
+                    <p class="p">片目 ¥50,000 /</p>
+                    <p class="p">両目 ¥90,000</p>
+                </td>
+                <td>
+                    <i class="fas fa-pen-fancy"></i>
+                    <i class="fas fa-dumpster"></i>
+                </td>
+            </tr>
+
+            <tr class="content3">
+                <td>123456</td>
+                <td>顔</td>
+                <td>目</td>
+                <td>二重まぶた・埋没法</td>
+                <td><img src="face.PNG" alt=""></td>
+                <td><img src="face.PNG" alt=""></td>
+                <td>
+                    <p class="p">注釈が入ります注釈が入</p>
+                    <p class="p">ります注釈が入ります</p>
+                </td>
+                <td>
+                    <p class="p">二重まぶた・埋没法</p>
+                    <p class="p">片目 ¥50,000 /</p>
+                    <p class="p">両目 ¥90,000</p>
+                </td>
+                <td>
+                    <i class="fas fa-pen-fancy"></i>
+                    <i class="fas fa-dumpster"></i>
+                </td>
+            </tr>
+
+
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="search_box.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <a href="#"> <img src="logo.PNG" alt=""></a>
+    <p style="color: #E30077; padding-left: 80px; font-size: 12px">大阪</p>
+</div>
+
+<div class="row">
+    <div class="col-sm-2">
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#">予約管理</a></li>
+                <li class="left"><a href="#">予約依頼一覧</a></li>
+                <li class="left"><a href="#">予約連絡・確定一覧</a></li>
+                <li class="left"><a href="#">キャンセル一覧</a></li>
+                <li><a href="#">患者管理</a></li>
+                <li class="left"><a href="#">患者一覧</a></li>
+                <li class="left"><a href="#">患者CSV取り込み</a></li>
+                <li><a href="#">マスタ管理</a></li>
+                <li class="left"><a href="#">管理者一覧</a></li>
+                <li class="left"><a href="#">症例紹介</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="col-sm-10">
+        <p style="font-size: 21px; display: inline-block">予約依頼一覧</p>
+        <div class="note">
+            <p>予約連絡・確定一覧</p>
+            <p>予約日連絡済み</p>
+            <p>予約日確認済み (確定)</p>
+            <p>自動キャンセル</p>
+            <p>再提案 (予約不可)</p>
+        </div>
+        <div class="content">
+            <p>
+                <label style="padding-right: 70px">ステータス</label>
+                <input class="input" type="text">
+            </p>
+            <p>
+                <label style="padding-right: 70px">カルテ番号</label>
+                <input class="input" type="text">
+            </p>
+            <p>
+                <label style="padding-right: 70px">美容・歯科</label>
+                <input class="input" type="text"  style="margin-right: 20px">
+                <label style="padding-right: 50px">予約カテゴリ</label>
+                <input class="input" type="text">
+                <label style="padding-right: 50px; padding-left: 10px">相談内容</label>
+                <input class="input" type="text">
+            </p>
+            <p>
+                <label style="padding-right: 94px">候補日</label>
+                <input class="input" type="text"  style="margin-right: 30px">
+                <input class="input" type="text">
+            </p>
+            <p style="text-align: center"><input class="input1" type="submit" value="検索" data-toggle="modal" data-target="#myModal"></p>
+
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-lg">
+                    <div style="background: #FFE7F0; padding: 20px 40px" class="modal-content">
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <p>予約NO</p>
+                                    <p>予約依頼日</p>
+                                    <p>カルテ番号</p>
+                                    <p>カルテ番号</p>
+                                    <p>予約カテゴリ</p>
+                                    <p>相談内容</p>
+                                    <p>予約候補日</p>
+                                </div>
+
+                                <div class="col-4">
+                                    <p>0123456789</p>
+                                    <p>2019/12/09</p>
+                                    <p>123456</p>
+                                    <p>美容</p>
+                                    手術</p>
+                                    <p>定期検診</p>
+                                    <p style="padding-right: 30px; display: inline-block">第１希望  <p style="display: inline-block">2019/12/09</p>
+                                    <p style="padding-right: 30px; display: inline-block">第２希望  <p style="display: inline-block">2019/12/10</p>
+                                    <p style="padding-right: 30px; display: inline-block">第３希望  <p style="display: inline-block">2019/12/11</p>
+                                    <p style="padding-right: 30px; display: inline-block">第４希望  <p style="display: inline-block">2019/12/12</p>
+                                    <p style="padding-right: 30px; display: inline-block">第５希望  <p style="display: inline-block">2019/12/13</p>
+                                </div>
+                            </div>
+
+                            <p style="font-size: 14px">この予約に対する予約日を選択してください。</p>
+                            <p>
+                                <input style="border: 1px solid #dfa0a8; border-radius: 3px; margin-left: 50px; text-align: center" class="input4" type="text" placeholder="2019/12/09">
+                                <a href="#"><i style="color: black; padding-left: 10px; font-size: 180%" class="fas fa-calendar"></i></a>
+                                <textarea style="margin-left: 30px; background: #F3F9FF; font-size: 80%" rows="5" cols="20" placeholder="カレンダーポップアップを表示"></textarea>
+                            </p>
+                            <p style="font-size: 14px">手術の場合、合計金額と予約金を選択してください。</p>
+                            <p>
+                                <label>合計金額</label>
+                                <input style="border: 1px solid #dfa0a8; border-radius: 3px; margin-left: 80px; text-align: center" type="text" value="800,000">
+                            </p>
+                            <p>
+                                <label>予約金</label>
+                                <input style="border: 1px solid #dfa0a8; border-radius: 3px; margin-left: 90px; text-align: center" type="text" value="10%">
+                            </p>
+                            <p style="text-align: center" >
+                                <input class="input5" type="submit" value="入力した日付で予約日を連絡する">
+                                <input class="input5" type="submit" value="キャンセル">
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <p style="margin-top: 15px; font-size: 12px; display: inline-block">
+            <input type="checkbox">
+            予約NGを非表示
+        </p>
+        <div class="note1">
+            <p>デフォルトでチェック</p>
+
+        </div>
+
+        <table style="width: 100%; margin-top: 50px">
+            <tr class="content1">
+                <th>ステータス</th>
+                <th>予約No</th>
+                <th>予約依頼日</th>
+                <th>カルテ番号</th>
+                <th>美容・歯科</th>
+                <th>予約カテゴリ</th>
+                <th>相談内容</th>
+                <th>候補日</th>
+                <th>アクション</th>
+            </tr>
+            <tr class="content3">
+                <td>予約依頼</td>
+                <td>20191209002</td>
+                <td>2019/12/09</td>
+                <td>123456</td>
+                <td>歯科</td>
+                <td>手術</td>
+                <td>定期検診</td>
+                <td>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                </td>
+                <td>
+                    <p>
+                        <input class="input2" type="submit" value="予約日連絡をする">
+                        <input class="input3" type="submit" value="編集">
+                    </p>
+                    <p>
+                        <input class="input2" type="submit" value="NG連絡をする">
+                        <input class="input3" type="submit" value="削除">
+                    </p>
+                </td>
+            </tr>
+            <tr class="content3">
+                <td>予約依頼</td>
+                <td>20191209002</td>
+                <td>2019/12/09</td>
+                <td>123456</td>
+                <td>歯科</td>
+                <td>手術</td>
+                <td>定期検診</td>
+                <td>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                </td>
+                <td>
+                    <p>
+                        <input class="input2" type="submit" value="予約日連絡をする">
+                        <input class="input3" type="submit" value="編集">
+                    </p>
+                    <p>
+                        <input class="input2" type="submit" value="NG連絡をする">
+                        <input class="input3" type="submit" value="削除">
+                    </p>
+                </td>
+            </tr>
+            <tr class="content2">
+                <td>予約依頼</td>
+                <td>20191209002</td>
+                <td>2019/12/09</td>
+                <td>123456</td>
+                <td>歯科</td>
+                <td>手術</td>
+                <td>定期検診</td>
+                <td>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                </td>
+                <td>
+                    <p style="padding: 50px 0 0 144px"><input class="input3" type="submit" value="削除"></p>
+                </td>
+            </tr>
+            <tr class="content3">
+                <td>予約依頼</td>
+                <td>20191209002</td>
+                <td>2019/12/09</td>
+                <td>123456</td>
+                <td>歯科</td>
+                <td>手術</td>
+                <td>定期検診</td>
+                <td>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                    <p class="p">2019/09/26</p>
+                </td>
+                <td>
+                    <p>
+                        <input class="input2" type="submit" value="予約日連絡をする">
+                        <input class="input3" type="submit" value="編集">
+                    </p>
+                    <p>
+                        <input class="input2" type="submit" value="NG連絡をする">
+                        <input class="input3" type="submit" value="削除">
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <div class="footer">
+            カルテ番号ポップアップ電話番号
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

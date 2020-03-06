@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="search_box.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <a href="#"> <img src="logo.PNG" alt=""></a>
+    <p style="color: #E30077; padding-left: 80px; font-size: 12px">大阪</p>
+</div>
+
+<div class="row">
+    <div class="col-sm-2">
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#">予約管理</a></li>
+                <li class="left"><a href="#">予約依頼一覧</a></li>
+                <li class="left"><a href="#">予約連絡・確定一覧</a></li>
+                <li class="left"><a href="#">キャンセル一覧</a></li>
+                <li><a href="#">患者管理</a></li>
+                <li class="left"><a href="#">患者一覧</a></li>
+                <li class="left"><a href="#">患者CSV取り込み</a></li>
+                <li><a href="#">マスタ管理</a></li>
+                <li class="left"><a href="#">管理者一覧</a></li>
+                <li class="left"><a href="#">症例紹介</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="col-sm-10">
+        <p style="font-size: 21px">患者管理</p>
+        <div class="content">
+            <p>
+                <label style="padding-right: 50px">カルテ番号</label>
+                <input class="input" type="text">
+            </p>
+            <p>
+                <label style="padding-right: 65px">電話番号</label>
+                <input class="input" type="text">
+            </p>
+            <p>
+                <label style="padding-right: 80px">登録日</label>
+                <input class="input" type="text"  style="margin-right: 20px">
+                <input class="input" type="text">
+            </p>
+           <p style="text-align: center"><input class="input1" type="submit" value="検索"></p>
+        </div>
+        <p style="margin: 10px 0">
+            <input class="input1" type="submit" value="新規予約登録" data-toggle="modal" data-target="#myModal">
+            <input class="input1" type="submit" value="CSV取り込み" data-toggle="modal" data-target="#myModal">
+        </p>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-sm">
+                <div style="background: #FFE7F0" class="modal-content">
+
+                    <div class="modal-body">
+                        <p class="app">予約日を連絡しました。</p>
+                        <input class="input2" type="submit" value="OK" data-dismiss="modal">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <table style="width: 100%; margin-bottom: 50px">
+            <tr class="content1">
+                <th>カルテ番号</th>
+                <th>電話番号 生年月日</th>
+                <th>LINEID</th>
+                <th>連携ステータス</th>
+                <th>登録日</th>
+                <th>更新日</th>
+                <th>アクション</th>
+                <th></th>
+            </tr>
+            <tr class="content2">
+                <td>123456</td>
+                <td>08091761989</td>
+                <td>ASDFASDFJAKSLD</td>
+                <td>連携済</td>
+                <td>2019/09/26</td>
+                <td>2019/09/26</td>
+                <td>予約一覧へ</td>
+                <td>
+                    <i class="fas fa-pen-fancy"></i>
+                    <i class="fas fa-dumpster"></i>
+                </td>
+            </tr>
+            <tr class="content3">
+                <td>123456</td>
+                <td>08091761989</td>
+                <td>ASDFASDFJAKSLD</td>
+                <td>連携済</td>
+                <td>2019/09/26</td>
+                <td>2019/09/26</td>
+                <td>予約一覧へ</td>
+                <td>
+                    <i class="fas fa-pen-fancy"></i>
+                    <i class="fas fa-dumpster"></i>
+                </td>
+            </tr>
+            <tr class="content2">
+                <td>123456</td>
+                <td>08091761989</td>
+                <td>ASDFASDFJAKSLD</td>
+                <td>連携済</td>
+                <td>2019/09/26</td>
+                <td>2019/09/26</td>
+                <td>予約一覧へ</td>
+                <td>
+                    <i class="fas fa-pen-fancy"></i>
+                    <i class="fas fa-dumpster"></i>
+                </td>
+            </tr>
+            <tr class="content3">
+                <td>123456</td>
+                <td>08091761989</td>
+                <td>ASDFASDFJAKSLD</td>
+                <td>連携済</td>
+                <td>2019/09/26</td>
+                <td>2019/09/26</td>
+                <td>予約一覧へ</td>
+                <td>
+                    <i class="fas fa-pen-fancy"></i>
+                    <i class="fas fa-dumpster"></i>
+                </td>
+            </tr>
+            <tr class="content2">
+                <td>123456</td>
+                <td>08091761989</td>
+                <td>ASDFASDFJAKSLD</td>
+                <td>連携済</td>
+                <td>2019/09/26</td>
+                <td>2019/09/26</td>
+                <td>予約一覧へ</td>
+                <td>
+                    <i class="fas fa-pen-fancy"></i>
+                    <i class="fas fa-dumpster"></i>
+                </td>
+            </tr>
+            <tr class="content3">
+                <td>123456</td>
+                <td>08091761989</td>
+                <td>ASDFASDFJAKSLD</td>
+                <td>連携済</td>
+                <td>2019/09/26</td>
+                <td>2019/09/26</td>
+                <td>予約一覧へ</td>
+                <td>
+                    <i class="fas fa-pen-fancy"></i>
+                    <i class="fas fa-dumpster"></i>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>

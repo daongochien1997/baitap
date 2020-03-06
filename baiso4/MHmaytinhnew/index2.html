@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="search_box.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-sm-2">
+        <div class="header">
+            <a href="#"> <img src="img/logo.PNG" alt=""></a>
+            <p style="padding-left: 80px; font-size: 12px">大阪</p>
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#">予約管理</a></li>
+                <li style="background: #FAF9F7" class="left"><a href="#">予約依頼一覧</a></li>
+                <li class="left"><a href="#">予約連絡・確定一覧</a></li>
+                <li class="left"><a href="#">キャンセル一覧</a></li>
+                <li><a href="#">患者管理</a></li>
+                <li class="left"><a href="#">患者一覧</a></li>
+                <li class="left"><a href="#">患者CSV取り込み</a></li>
+                <li><a href="#">マスタ管理</a></li>
+                <li class="left"><a href="#">管理者一覧</a></li>
+                <li class="left"><a href="#">症例紹介</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="col-sm-10 container">
+        <p style="font-size: 21px; display: inline-block">予約依頼一覧</p>
+
+        <p data-toggle="modal" data-target="#myModal" class="load">新規確定予約登録</p>
+
+
+        <div class="table">
+            <table style="width: 100%; margin-top: 50px; margin-bottom: 70px">
+                <tr class="content1">
+                    <th>番号</th>
+                    <th>カテゴリ１</th>
+                    <th>カテゴリ２</th>
+                    <th>カテゴリ３</th>
+                    <th>Before画像</th>
+                    <th>After画像</th>
+                    <th>注釈</th>
+                    <th>料金</th>
+                    <th>アクション</th>
+                </tr>
+                <tr class="content2">
+                    <td>123456</td>
+                    <td>顔</td>
+                    <td>目</td>
+                    <td>二重まぶた・埋没法</td>
+                    <td><img src="img/face.PNG" alt=""></td>
+                    <td><img src="img/face.PNG" alt=""></td>
+                    <td>
+                        <p class="p">注釈が入ります注釈が入</p>
+                        <p class="p">ります注釈が入ります</p>
+                    </td>
+                    <td>
+                        <p class="p">二重まぶた・埋没法</p>
+                        <p class="p">片目 ¥50,000 /</p>
+                        <p class="p">両目 ¥90,000</p>
+                    </td>
+                    <td>
+                        <p>
+                            <input class="input3" type="submit" value="編集">
+                            <input style="background: #818181; border: 1px solid rgba(135,135,135,0.73)" class="input3" type="submit" value="削除">
+                        </p>
+                    </td>
+                </tr>
+
+                <tr class="content3">
+                    <td>123456</td>
+                    <td>顔</td>
+                    <td>目</td>
+                    <td>二重まぶた・埋没法</td>
+                    <td><img src="img/face.PNG" alt=""></td>
+                    <td><img src="img/face.PNG" alt=""></td>
+                    <td>
+                        <p class="p">注釈が入ります注釈が入</p>
+                        <p class="p">ります注釈が入ります</p>
+                    </td>
+                    <td>
+                        <p class="p">二重まぶた・埋没法</p>
+                        <p class="p">片目 ¥50,000 /</p>
+                        <p class="p">両目 ¥90,000</p>
+                    </td>
+                    <td>
+                        <p>
+                            <input class="input3" type="submit" value="編集">
+                            <input style="background: #818181; border: 1px solid rgba(135,135,135,0.73)" class="input3" type="submit" value="削除">
+                        </p>
+                    </td>
+                </tr>
+                <tr class="content2">
+                    <td>123456</td>
+                    <td>顔</td>
+                    <td>目</td>
+                    <td>二重まぶた・埋没法</td>
+                    <td><img src="img/face.PNG" alt=""></td>
+                    <td><img src="img/face.PNG" alt=""></td>
+                    <td>
+                        <p class="p">注釈が入ります注釈が入</p>
+                        <p class="p">ります注釈が入ります</p>
+                    </td>
+                    <td>
+                        <p class="p">二重まぶた・埋没法</p>
+                        <p class="p">片目 ¥50,000 /</p>
+                        <p class="p">両目 ¥90,000</p>
+                    </td>
+                    <td>
+                        <p>
+                            <input class="input3" type="submit" value="編集">
+                            <input style="background: #818181; border: 1px solid rgba(135,135,135,0.73)" class="input3" type="submit" value="削除">
+                        </p>
+                    </td>
+                </tr>
+
+                <tr class="content3">
+                    <td>123456</td>
+                    <td>顔</td>
+                    <td>目</td>
+                    <td>二重まぶた・埋没法</td>
+                    <td><img src="img/face.PNG" alt=""></td>
+                    <td><img src="img/face.PNG" alt=""></td>
+                    <td>
+                        <p class="p">注釈が入ります注釈が入</p>
+                        <p class="p">ります注釈が入ります</p>
+                    </td>
+                    <td>
+                        <p class="p">二重まぶた・埋没法</p>
+                        <p class="p">片目 ¥50,000 /</p>
+                        <p class="p">両目 ¥90,000</p>
+                    </td>
+                    <td>
+                        <p>
+                            <input class="input3" type="submit" value="編集">
+                            <input style="background: #818181; border: 1px solid rgba(135,135,135,0.73)" class="input3" type="submit" value="削除">
+                        </p>
+                    </td>
+                </tr>
+                <tr class="content2">
+                    <td>123456</td>
+                    <td>顔</td>
+                    <td>目</td>
+                    <td>二重まぶた・埋没法</td>
+                    <td><img src="img/face.PNG" alt=""></td>
+                    <td><img src="img/face.PNG" alt=""></td>
+                    <td>
+                        <p class="p">注釈が入ります注釈が入</p>
+                        <p class="p">ります注釈が入ります</p>
+                    </td>
+                    <td>
+                        <p class="p">二重まぶた・埋没法</p>
+                        <p class="p">片目 ¥50,000 /</p>
+                        <p class="p">両目 ¥90,000</p>
+                    </td>
+                    <td>
+                        <p>
+                            <input class="input3" type="submit" value="編集">
+                            <input style="background: #818181; border: 1px solid rgba(135,135,135,0.73)" class="input3" type="submit" value="削除">
+                        </p>
+                    </td>
+                </tr>
+
+                <tr class="content3">
+                    <td>123456</td>
+                    <td>顔</td>
+                    <td>目</td>
+                    <td>二重まぶた・埋没法</td>
+                    <td><img src="img/face.PNG" alt=""></td>
+                    <td><img src="img/face.PNG" alt=""></td>
+                    <td>
+                        <p class="p">注釈が入ります注釈が入</p>
+                        <p class="p">ります注釈が入ります</p>
+                    </td>
+                    <td>
+                        <p class="p">二重まぶた・埋没法</p>
+                        <p class="p">片目 ¥50,000 /</p>
+                        <p class="p">両目 ¥90,000</p>
+                    </td>
+                    <td>
+                        <p>
+                            <input class="input3" type="submit" value="編集">
+                            <input style="background: #818181; border: 1px solid rgba(135,135,135,0.73)" class="input3" type="submit" value="削除">
+                        </p>
+                    </td>
+                </tr>
+
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog page">
+        <div style="padding: 15px 40px" class="modal-content">
+
+            <div class="modal-body">
+                <p>ステータス</p>
+                <p>
+                    <select class="input4">
+                        <option>予約依頼</option>
+                    </select>
+                </p>
+                <p>ステータス</p>
+                <p>
+                    <select class="input4">
+                        <option>予約依頼</option>
+                    </select>
+                </p>
+                <p>ステータス</p>
+                <p>
+                    <select class="input4">
+                        <option>予約依頼</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Before画像</label>
+                </p>
+                <div class="book">
+                    ファイルを選択するか、ドラッグ・アンド・ドロップしてください
+                </div>
+                <div class="book1">
+                    <p><img src="img/face.PNG" alt=""></p>
+                    <p><input type="submit" value="削除"></p>
+                </div>
+                <p>
+                    <label>After画像</label>
+                </p>
+                <div class="book1">
+                    <p><img src="img/face.PNG" alt=""></p>
+                    <p><input type="submit" value="削除"></p>
+                </div>
+
+                <p>注釈</p>
+                <div style="padding-top: 30px" class="book2">
+                    注釈が入ります注釈が入ります注釈が入ります注釈が入ります
+                </div>
+                <p>料金</p>
+                <div style="padding-top: 8px" class="book2">
+                    <p>二重まぶた・埋没法</p>
+                    <p>片目 ¥50,000 /</p>
+                    <p> 両目¥90,000</p>
+                </div>
+
+                <p style="text-align: center" >
+                    <input style="width: 110px; height: 40px" class="input3" type="submit" value="登録">
+                    <input style="background: #aeaeae; height: 40px; border: 1px solid white; width: 110px" class="input3" type="submit" value="キャンセル">
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

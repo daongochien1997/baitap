@@ -1,0 +1,32 @@
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.page-wap {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+
+.header {
+    margin: 5%;
+}
+
+.title {
+    text-align: center;
+}
+
+.content {
+    margin: 25px;
+    border: 1px solid #A59647;
+    padding: 15px 5% 20px 5%;
+    text-align: center;
+    margin-bottom: 500px;
+}
+
+.content p {
+    font-size: 13px;
+    margin-top: auto;
+}

@@ -1,0 +1,63 @@
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: inline-block;
+}
+
+.content {
+    background: #FFE7F0;
+    padding: 50px 0 15px 0;
+}
+
+.header {
+    margin: 40px;
+}
+
+.left {
+    margin-left: 15px;
+}
+
+.main-menu ul li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.input {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.input1 {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 150px;
+    background: white;
+    height: 30px;
+    color: #d498a0;
+    margin-left: 40px;
+}
+
+.content1 {
+    border: 1px solid #efabb4;
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    font-size: 80%;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.input2 {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 120px;
+    background: #959595;
+    height: 30px;
+    margin-top: 100px;
+}

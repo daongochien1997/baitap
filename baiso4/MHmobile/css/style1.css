@@ -1,0 +1,44 @@
+.clearfix::after{
+     content: "";
+     clear: both;
+     display: table;
+ }
+
+.page-wap {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+
+.header {
+    margin: 5%;
+}
+
+.title {
+    text-align: center;
+}
+
+.footer {
+    margin: 25px;
+    border: 1px solid #E5799F;
+    border-radius: 3px;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.footer p {
+    display: inline-block;
+    color: #BD4C88;
+    font-size: 17px;
+    padding-left: 20%;
+}
+
+@media (max-width: 370px) {
+    .footer p {
+        padding-left: 5%;
+    }
+}
+
+a {
+    text-decoration: none;
+}

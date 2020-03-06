@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-wap">
+    <div class="header">
+        <a href="#"> <img src="img/logoa.PNG" alt=""></a>
+        <p style="padding-left: 50px; font-size: 12px; margin-top: auto">大阪</p>
+    </div>
+
+    <div class="title">
+        <h1 style="margin-bottom: auto; font-size: 52px">美容予約</h1>
+        <p style="font-size: 13px; margin-top: auto">予約する診察内容を選択してください</p>
+    </div>
+
+    <div class="content">
+        <h1 class="menu">料金表示に対するご注意</h1>
+        <p>当サイトで掲載されている価格は税抜き表示となっております。</p>
+        <p>ご来院時の消費税率にて精算させていただきます。
+            当サイト以外に記載されている各施術料金は、価</p>
+        <p>格が古いものや誤った価格が掲載されていることがあり、その価格にてお受けすることが出来ない場合もございます。
+        </p>
+        <p>正しい料金については、当サイトをご確認して頂くようお願い致します。</p>
+    </div>
+
+    <div class="content1">
+        <h1 class="menu1">未成年の方へ</h1>
+        <div class="sub-menu">
+            未成年の方の手術には、親御様の同意が必要になります。
+        </div>
+        <p style="font-size: 13px; border-top: 1px solid #A59647; padding-top: 10px">カウンセリングのみで当日手術を行われないのであれば同意書は必要ありません。</p>
+        <p style="font-size: 13px">手術を行う際は同意書をご持参頂きますか、もしくは親御様とご同伴下さい。</p>
+        <div class="navigation">
+            <p>同意書（PDF）のダウンロード</p>
+            <img style="margin-top: auto; padding-left: 80%" src="img/2.PNG" alt="">
+        </div>
+    </div>
+    <div class="content2">
+        <h1 class="menu2">プライバシーポリシー</h1>
+        <p style="font-size: 13px">お客様からご提供いただく個人情報については、高須クリニック事務局で適切な管理を行います。なお、
+            管理は秘密保持契約を交わした上で当サービスの管理会社に委託します。また、委託先に対して、個人情報の適切な管理を徹底いたします。</p>
+    </div>
+    <div class="content3">
+        <input type="checkbox" id="checkbox">
+        プライバシーポリシー(個人情報保護方針)について同意する。
+    </div>
+    <a href="index1.html">
+        <div class="footer discolor">
+            <p>診察予約をする</p>
+            <p style="float: right"><img src="img/3.PNG" alt=""></p>
+        </div>
+    </a>
+    <a href="index1.html">
+        <div class="footer discolor">
+            <p>診察予約をする</p>
+            <p style="float: right"><img src="img/3.PNG" alt=""></p>
+        </div>
+    </a>
+    <script>
+        $(function(){
+            $("#checkbox").change(function() {
+                $(".discolor").toggleClass("mau", this.checked)
+            }).change();
+        })
+    </script>
+
+</div>
+
+
+</body>
+</html>

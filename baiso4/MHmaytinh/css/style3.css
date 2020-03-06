@@ -1,0 +1,108 @@
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: inline-block;
+}
+
+.content {
+    background: #FFE7F0;
+    padding: 50px 0 15px 0;
+}
+
+.header {
+    margin: 40px;
+}
+
+.left {
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.main-menu ul li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.input {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.input1 {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 150px;
+    background: white;
+    height: 30px;
+    color: #d498a0;
+    margin-left: 38px;
+}
+
+.input2 {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 200px;
+    background: white;
+    height: 30px;
+    color: #d498a0;
+    margin-left: 40px;
+}
+
+.input3 {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 300px;
+    background: white;
+    height: 60px;
+    color: #d498a0;
+    margin-left: 75px;
+}
+
+.input4 {
+    border: 1px solid #efabb4;
+    border-radius: 5px;
+    width: 150px;
+    background: white;
+    height: 30px;
+    color: #d498a0;
+}
+
+.content1 {
+    background: #FFCFE0;
+}
+
+.content1 th {
+    padding: 15px 0;
+}
+
+tr  th, tr td {
+    font-size: 13px;
+}
+
+.p {
+    margin-bottom: auto;
+}
+
+
+.content2 {
+    padding: 10px 0;
+}
+
+.content3 {
+    background: #FFEDF4;
+    padding: 10px 0;
+}
+
+label {
+    font-size: 12px;
+}
+
+.content1 th, .content2 td, .content3 td {
+    font-size: 12px;
+}
