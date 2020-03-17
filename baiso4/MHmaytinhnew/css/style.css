@@ -1,7 +1,7 @@
 .clearfix::after{
     content: "";
     clear: both;
-    display: inline-block;
+    display: table;
 }
 
 .container {
@@ -174,3 +174,18 @@ a {
     max-width: 600px !important; ;
 }
 
+.table table tr:hover {
+    background: rgba(206, 206, 206, 0.66);
+}
+
+.table table tr .input2:hover {
+    background: rgba(250, 70, 120, 0.56);
+}
+
+.table table tr .input3:hover {
+    background: rgba(204, 49, 105, 0.89);
+}
+
+.main-menu ul li:hover {
+    background: #FAF9F7;
+}
