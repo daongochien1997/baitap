@@ -4,6 +4,10 @@
     display: table;
 }
 
+body {
+    overflow-x:hidden;
+}
+
 .container {
     background: #FAF9F7;
     padding: 20px;
