@@ -79,8 +79,14 @@
             </nav>
             <nav class="clearfix" style="margin-bottom: 5px">
                 <div>
-                    <p>候補日</p>
-                    <input style="width: 290px; margin-right: 20px" type="text">
+                    <p>候補日 <a href="#"><i style="color: #bf2e62; font-size: 150%" class="fas fa-calendar datetime"></i></a></p>
+                    <input style="width: 290px; margin-right: 20px" type="text" class="datetime">
+                    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
+                    <script src="css/jquery.datetimepicker.full.js"></script>
+
+                    <script>
+                        $(".datetime").datetimepicker();
+                    </script>
                 </div>
                 <div>
                     <p style="margin-right: 20px; padding-top: 50px">〜</p>
