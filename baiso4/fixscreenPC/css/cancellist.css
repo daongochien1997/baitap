@@ -1,0 +1,143 @@
+.content1 th {
+    padding: 15px 0;
+    border-right: 1px solid gray;
+}
+
+.p {
+    margin-bottom: auto;
+    font-size: 12px;
+}
+
+
+.modal-body p {
+    font-size: 12px;
+    margin-bottom: auto;
+    padding: 3px;
+}
+
+label {
+    font-size: 12px;
+}
+
+.content1 th, .content2 td, .content3 td {
+    font-size: 12px;
+}
+
+.note {
+    display: inline-block;
+    font-size: 12px;
+    border: 1px solid #3283C7;
+    background: #F3F9FF;
+    width: 180px;
+    height: auto;
+    padding: 15px 0 20px 0;
+    top: 40px;
+    left: 160px;
+    position: relative;
+}
+
+.search {
+    width: 190px;
+    height: 48px;
+    background: #bf2e62;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: white;
+    padding-top: 10px;
+}
+
+.pop div {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+.table {
+    background: white;
+}
+
+.load {
+    width: 180px;
+    height: 40px;
+    border: 1px solid #E5799F;
+    color: #BD4C88;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 7px;
+}
+
+.page {
+    max-width: 480px !important; ;
+}
+
+.input4 {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #A5964B;
+    border-radius: 3px;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.input5 {
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    background: #b94a85;
+}
+
+.book {
+    width: 100%;
+    height: 60px;
+    background: #FDFCF8;
+    text-align: center;
+    font-size: 12px;
+    border: 1px dotted #D3CCA6;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.book1 {
+    background: #F4F4F4;
+    padding: 15px;
+}
+
+.book1 input {
+    background: #d6d6d6;
+    font-size: 12px;
+    width: 70px;
+    height: 30px;
+    margin: 5px;
+}
+
+.book2 {
+    width: 100%;
+    height: 90px;
+    border: 1px solid #A5964B;
+    text-align: center;
+    font-size: 12px;
+    margin: 5px;
+}
+
+.table table tr:hover {
+    background: rgba(206, 206, 206, 0.66);
+}
+
+.table table tr .input2:hover {
+    background: rgba(250, 70, 120, 0.56);
+}
+
+.table table tr .input3:hover {
+    background: rgba(204, 49, 105, 0.89);
+}
+
+.main-menu ul li:hover {
+    background: #FAF9F7;
+}
+
+.load:hover {
+    background: rgba(250, 70, 120, 0.56);
+}

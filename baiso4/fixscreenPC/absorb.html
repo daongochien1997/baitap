@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="search_box.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/absorb.css">
+</head>
+<body>
+
+<div class="row">
+    <div class="col-sm-2">
+        <div class="header">
+            <a href="#"> <img src="img/logo.PNG" alt=""></a>
+            <p style="padding-left: 80px; font-size: 12px">大阪</p>
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="login.html">予約管理</a></li>
+                <li class="left"><a href="bookroom.html">予約依頼一覧</a></li>
+                <li class="left"><a href="listcontact.html">予約連絡・確定一覧</a></li>
+                <li class="left"><a href="cancellist.html">キャンセル一覧</a></li>
+                <li><a href="management.html">患者管理</a></li>
+                <li class="left"><a href="patientlist.html">患者一覧</a></li>
+                <li style="background: #FAF9F7" class="left"><a href="absorb.html">患者CSV取り込み</a></li>
+                <li><a href="#">マスタ管理</a></li>
+                <li class="left"><a href="#">管理者一覧</a></li>
+                <li class="left"><a href="#">症例紹介</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="col-sm-10 container">
+        <p style="font-size: 21px; display: inline-block">患者CSV取り込み</p>
+        <div class="content">
+            <p>下記のボタンから、CSVファイルを選択してください</p>
+            <div class="sub-content">
+                <p style="display: inline-block; padding-right: 25px">ファイル名.csv</p>
+                <p style="display: inline-block; "><img src="img/v.PNG" alt=""></p>
+            </div>
+            <a href="#"><p class="input">取り込み開始</p></a>
+        </div>
+
+    </div>
+
+</div>
+
+<input type="checkbox" name="sameAsShipping" class="checkbox" id="checkbox4"}>
+
+<div id="checkout-shipping-address">
+    CLICK THE CHECKBOX TO HIDE ME!
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#checkbox4").change(function() {
+            $("#checkout-shipping-address").toggleClass("show-hide", this.checked);
+        }).change();
+    })
+</script>
+
+</body>
+</html>
